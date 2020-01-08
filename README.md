@@ -126,3 +126,12 @@ Feel free to reach him out to start collaborating!
 ### Atributions
 
 - This repository contains a [MIT License](https://github.com/RodolfoFerro/PyConCo20/blob/master/LICENSE)
+- I want to specially thank each person that made possible my participation in this event:
+  - Sara and Noemí Martínez
+  - Paola and Hiram Soria
+  - Miguel Ángel Zetina
+  - José Luis Badillo
+  - Lizzeth Luevano
+  - Andrea Nuño
+  - Miguel Ángel Camacho
+  - Abril Martínez
