@@ -13,6 +13,10 @@
 # -*- coding: utf-8 -*-
 
 import base64
+from io import BytesIO
+
+import numpy as np
+from PIL import Image
 
 
 def image_encoder(img_path):
@@ -26,13 +30,11 @@ def image_encoder(img_path):
     Returns
     -------
     encoded_img : str
-        A string in UTF-8 format containing the encoded image.
+        A bytes string containing the encoded image.
     """
     
     with open(img_path, 'rb') as img_file:
-        encoded = base64.b64encode(img_file.read())
-
-    encoded_img = encoded.decode('utf-8')
+        encoded_img = base64.b64encode(img_file.read())
 
     return encoded_img
 
@@ -47,9 +49,15 @@ def image_decoder(encoded_img):
     
     Returns
     -------
+    img : ndarray
+        The decoded image as a NumPy array.
     """
 
-    return
+    decoded_img = base64.decodebytes(encoded_img)
+    img = Image.open(BytesIO(decoded_img))
+    img = np.asarray(img)
+
+    return img
 
 
 def save_output(text, filename):

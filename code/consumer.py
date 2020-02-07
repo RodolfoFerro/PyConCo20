@@ -13,9 +13,11 @@
 # -*- coding: utf-8 -*-
 
 from utils import image_encoder
+from utils import image_decoder
 from utils import save_output
 
 import requests
+import matplotlib.pyplot as plt
 
 
 def check_status(url, verbose=False, outfile=False):
@@ -74,14 +76,20 @@ def predict_emotion(img_path, url, verbose=False, outfile=False):
         "image": encoded_img
     }
     
-    print(encoded_img)
+    decoded_img = image_decoder(encoded_img)
+    print(decoded_img)
+    plt.imshow(decoded_img)
+    plt.show()
+    
+    
+    
     
     
     
 
 if __name__ == '__main__':
     # Test API on status route
-    r = check_status('http://localhost:5000/api/status')
+    # r = check_status('http://localhost:5000/api/status')
     
     # Predict emotion form image
-    p = predict_emotion('../media/banner.png', '')
+    p = predict_emotion('../media/Sad.png', '')
