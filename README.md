@@ -109,6 +109,13 @@ That last command should open a new tab/window on your web browser, as in the fo
 
 As in Google Colab, you can create a new notebook in the `New -> Python 3` option. To close the Jupyter Notebook you can press the `Quit` button and then close the tab or window of your web browser.
 
+> **Extra:**
+> If you want to have a nice-looking development environment with Jupyter Lab, I encourage you to install a nice theme. To do so, simply run in your terminal (with the virtual/conda environment activated):
+> ```bash
+> $ jupyter labextension install jupyterlab-tailwind-theme
+> ```
+>That's it. Now you should be able to activate the theme in your settings once you run your Jupyter Lab.
+
 
 ## About the author
 
