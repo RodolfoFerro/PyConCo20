@@ -17,7 +17,6 @@ from utils import image_decoder
 from utils import save_output
 
 import requests
-import matplotlib.pyplot as plt
 
 
 def check_status(url, verbose=True, outfile=False):
