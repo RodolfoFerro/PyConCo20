@@ -114,8 +114,13 @@ As in Google Colab, you can create a new notebook in the `New -> Python 3` optio
 > ```bash
 > $ jupyter labextension install jupyterlab-tailwind-theme
 > ```
->That's it. Now you should be able to activate the theme in your settings once you run your Jupyter Lab.
+> That's it. Now you should be able to activate the theme in your settings once you run your Jupyter Lab.
 
+To download the dataset to be used:
+```bash
+mkdir data
+wget -O data/fer2013.csv https://www.dropbox.com/s/zi48lkarsg4kbry/fer2013.csv\?dl\=1
+```
 
 ## About the author
 

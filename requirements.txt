@@ -1,6 +1,10 @@
 numpy
 flask
 pillow
+pandas
 requests
 matplotlib
 tensorflow
+tf-explain
+jupyterlab
+ipykernel
