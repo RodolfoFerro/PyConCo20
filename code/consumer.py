@@ -20,7 +20,7 @@ import requests
 import matplotlib.pyplot as plt
 
 
-def check_status(url, verbose=False, outfile=False):
+def check_status(url, verbose=True, outfile=False):
     """Function to verify the API status.
     
     Parameters
@@ -50,7 +50,7 @@ def check_status(url, verbose=False, outfile=False):
     return response
 
 
-def predict_emotion(img_path, url, verbose=False, outfile=False):
+def predict_emotion(img_path, url, verbose=True, outfile=False):
     """Function to call the emotion predictor API.
     
     Parameters
@@ -76,20 +76,23 @@ def predict_emotion(img_path, url, verbose=False, outfile=False):
         "image": encoded_img
     }
     
-    decoded_img = image_decoder(encoded_img)
-    print(decoded_img)
-    plt.imshow(decoded_img)
-    plt.show()
+    r = requests.post(url, json=data)
+    response = r.json()
     
+    if outfile:
+        save_output(r.text, 'predict_emotion.json')
     
-    
-    
-    
+    if verbose:
+        print(r.text)
+
+    return response
     
 
 if __name__ == '__main__':
     # Test API on status route
-    # r = check_status('http://localhost:5000/api/status')
+    print('=== API status check ===')
+    r = check_status('http://localhost:5000/api/status')
     
     # Predict emotion form image
-    p = predict_emotion('../media/Sad.png', '')
+    print('=== API emotion classification ===')
+    p = predict_emotion('../media/Happy.png', 'http://localhost:5000/api/emotion')
