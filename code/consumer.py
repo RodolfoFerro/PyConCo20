@@ -17,7 +17,6 @@ from utils import image_decoder
 from utils import save_output
 
 import requests
-import matplotlib.pyplot as plt
 
 
 def check_status(url, verbose=True, outfile=False):
@@ -96,3 +95,4 @@ if __name__ == '__main__':
     # Predict emotion form image
     print('=== API emotion classification ===')
     p = predict_emotion('../media/Happy.png', 'http://localhost:5000/api/emotion')
+
