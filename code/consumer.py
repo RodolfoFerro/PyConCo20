@@ -38,8 +38,8 @@ def check_status(url, verbose=True, outfile=False):
         The response as a JSON object.
     """
     
-    r = requests.get(url)
-    response = r.json()
+    # r <- GET request from url
+    # response <- Convert r to JSON
     
     if outfile:
         save_output(r.text, 'check_status.json')
@@ -70,14 +70,14 @@ def predict_emotion(img_path, url, verbose=True, outfile=False):
         The response as a JSON object.
     """
     
-    encoded_img = image_encoder(img_path)
+    # encoded_img <- Call image_encoder() on img_path
 
     data = {
         "image": encoded_img
     }
     
-    r = requests.post(url, json=data)
-    response = r.json()
+    # r <- POST request from url, send data as JSON object
+    # response <- Convert r to JSON
     
     if outfile:
         save_output(r.text, 'predict_emotion.json')
@@ -91,8 +91,8 @@ def predict_emotion(img_path, url, verbose=True, outfile=False):
 if __name__ == '__main__':
     # Test API on status route
     print('=== API status check ===')
-    r = check_status('http://localhost:5000/api/status')
+    r = check_status('')
     
     # Predict emotion form image
     print('=== API emotion classification ===')
-    p = predict_emotion('../media/Happy.png', 'http://localhost:5000/api/emotion')
+    p = predict_emotion('../media/Happy.png', '')

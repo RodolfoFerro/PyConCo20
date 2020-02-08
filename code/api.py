@@ -12,8 +12,6 @@
 
 # -*- coding: utf-8 -*-
 
-import base64
-
 from flask import Flask
 from flask import request
 from flask import jsonify
@@ -26,7 +24,7 @@ from utils import image_decoder
 # Global variables
 dl_model = '../model/model.json'
 dl_weights = '../model/model.h5'
-model = load_model(dl_model, dl_weights)
+# model <- Call the load_model funtion
 labels = [
     'Angry',
     'Disgust',
@@ -42,7 +40,6 @@ labels = [
 api = Flask(__name__)
 
 
-@api.route('/api/status', methods=['GET'])
 def status():
     """
     GET method for API status verification.
@@ -54,49 +51,46 @@ def status():
             "This API is up and running!"
         ]
     }
-    response = jsonify(message)
-    response.status_code = 200
 
-    return response
+    return
 
 
-@api.route('/api/emotion', methods=['POST'])
 def predict_emotion():
     """
     POST method for emotion prediction endpoint.
     """
 
     # Get data as JSON from POST
-    data = request.get_json()
+    # data <- get_json() from request
     
     # Parse data from JSON
-    raw_img = data['image']
+    # raw_img <- 'image' key from data
     
     # Build input vector for DL model
-    input_img = image_decoder(raw_img)
+    # input_img <- Call image_decoder() on raw_img
     
     # Predict using DL model
-    prediction = model.predict(input_img)
-    p_class = np.argmax(prediction)
+    # prediction <- predict on input_img using the model
+    # p_class <- grab the argmax of the prediciton vector
     
     # Serialize predictions for response
-    prob_vector = [float(val) for val in prediction[0]]
-    class_id = int(p_class)
-    class_name = labels[class_id]
+    prob_vector = None # TODO
+    class_id = None    # TODO
+    class_name = None  # TODO
     
     # Send response
-    message = {
-        "status": 200,
-        "message": [
+    """
+    Build message with:
+    
+    "message": [
             {
                 "task": "Facial Emotion Recognition",
-                "prob_vector": prob_vector,
-                "class_id": class_id,
-                "class_name": class_name}
+                "prob_vector": ???,
+                "class_id": ???,
+                "class_name": ???
+            }
         ]
-    }
-    response = jsonify(message)
-    response.status_code = 200
+    """
 
     return response
 
@@ -120,4 +114,5 @@ def not_found(error=None):
 
 
 if __name__ == '__main__':
-    api.run(port=5000, debug=True)
+    # Run API...
+    pass
