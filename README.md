@@ -23,11 +23,12 @@ This workshop requires intermediate-advanced knowledge about Python programming,
 This workshop has been exclusively developed for its usage during **PyCon Colombia 2020**. The workshop should be self-contained, which means that with this explaining document should be enough to follow up and develop the complete contents.
 
 As a summary, the complete content to be covered along the workshop is the following:
-- Introduction and motivation - 15 minutes
-- Prerequisites and setup - 10 minutes
-- Quick intro to the Deep Learning world - 10 minutes
-- Web services and REST APIs -
-- Serving a trained model -
+- A quick intro _(5 minutes)_
+- Prerequisites and setup _(15 minutes)_
+- Motivation (why is this relevant?) _(10 minutes)_
+- Quick intro to the Deep Learning world _(30 minutes)_
+- Web services → Let's build our API _(40 minutes)_
+- Wrap up! _(5 minutes)_
 
 You can find the Google Slides [**HERE**](#).
 
