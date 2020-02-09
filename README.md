@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/github/license/RodolfoFerro/PyConCo20?style=for-the-badge) <br>
 [![Twitter](https://img.shields.io/twitter/follow/FerroRodolfo?label=Twitter&logo=twitter&style=for-the-badge)](https://twitter.com/FerroRodolfo/) <br>
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555)](https://www.linkedin.com/in/rodolfoferro/) <br>
-[![Slides](https://img.shields.io/static/v1?label=Slides&message=Google%20Slides&color=tomato&style=for-the-badge)](#)
+[![Slides](https://img.shields.io/static/v1?label=Slides&message=Google%20Slides&color=tomato&style=for-the-badge)](https://docs.google.com/presentation/d/e/2PACX-1vTnx_zuc9VT5rO9Fg0af-GjC589DuSoFGkFZH4Ekj32sY6LK18WeAyYBl_prXcN0ZD2HMRlSCDxfyj5/pub?start=false&loop=false&delayms=3000)
 
 
 
@@ -30,7 +30,7 @@ As a summary, the complete content to be covered along the workshop is the follo
 - Web services → Let's build our API _(40 minutes)_
 - Wrap up! _(5 minutes)_
 
-You can find the Google Slides [**HERE**](#).
+You can find the Google Slides [**HERE**](https://docs.google.com/presentation/d/e/2PACX-1vTnx_zuc9VT5rO9Fg0af-GjC589DuSoFGkFZH4Ekj32sY6LK18WeAyYBl_prXcN0ZD2HMRlSCDxfyj5/pub?start=false&loop=false&delayms=3000).
 
 
 ## Setup instructions
