@@ -3,7 +3,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/RodolfoFerro/PyConCo20?style=for-the-badge) <br>
 ![GitHub repo size](https://img.shields.io/github/repo-size/RodolfoFerro/PyConCo20?style=for-the-badge) <br>
 ![License](https://img.shields.io/github/license/RodolfoFerro/PyConCo20?style=for-the-badge) <br>
-[![Twitter](https://img.shields.io/twitter/follow/FerroRodolfo?label=Twitter&logo=twitter&style=for-the-badge)](https://twitter.com/FerroRodolfo/) <br>
+[![Twitter](https://img.shields.io/twitter/follow/rodo_ferro?label=Twitter&logo=twitter&style=for-the-badge)](https://twitter.com/rodo_ferro/) <br>
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555)](https://www.linkedin.com/in/rodolfoferro/) <br>
 [![Slides](https://img.shields.io/static/v1?label=Slides&message=Google%20Slides&color=tomato&style=for-the-badge)](https://docs.google.com/presentation/d/e/2PACX-1vTnx_zuc9VT5rO9Fg0af-GjC589DuSoFGkFZH4Ekj32sY6LK18WeAyYBl_prXcN0ZD2HMRlSCDxfyj5/pub?start=false&loop=false&delayms=3000)
 
@@ -133,7 +133,7 @@ For several years, he has been actively participating in building AI and tech co
 
 Feel free to reach him out to start collaborating!
 
-– [@FerroRodolfo](https://twitter.com/FerroRodolfo/)
+– [@rodo_ferro](https://twitter.com/rodo_ferro/)
 
 
 ### Atributions
