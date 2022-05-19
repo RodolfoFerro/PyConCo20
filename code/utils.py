@@ -1,7 +1,7 @@
 # ==============================================================
 # Author: Rodoflo Ferro
 # Email: ferro@cimat.mx
-# Twitter: @FerroRodolfo
+# Twitter: @rodo_ferro
 #
 # ABOUT COPYING OR USING PARTIAL INFORMATION:
 # This script has been originally created by Rodolfo Ferro,
